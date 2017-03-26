@@ -1,21 +1,36 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import { connect } from 'react-redux';
+
+import RouteWithSubRoute from './components/common/RouteWithSubRoute';
+import BookCarousel from './components/common/BookCarousel';
+
+
 
 class App extends Component {
+
   render() {
+    let books = []
+
+      for(let key in this.props.state.example.epicFantasy) {
+       books.push( this.props.state.example.epicFantasy[key] )
+       books.push( this.props.state.example.lowFantasy[key] )
+      }
+
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <BookCarousel books={books} />
+        {this.props.routes.map((route, i) => (
+          <RouteWithSubRoute key={i} {...route}/>
+        ))}
       </div>
     );
   }
 }
 
-export default App;
+function mapStateToProps(state) {
+  return {
+    state
+  }
+}
+export default connect(mapStateToProps)(App);
