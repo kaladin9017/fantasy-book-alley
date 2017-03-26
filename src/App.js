@@ -20,6 +20,7 @@ class App extends Component {
     return (
       <div className="App">
         <BookCarousel books={books} />
+        <BookCarousel books={books} />
         {this.props.routes.map((route, i) => (
           <RouteWithSubRoute key={i} {...route}/>
         ))}

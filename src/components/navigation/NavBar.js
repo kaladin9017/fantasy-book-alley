@@ -8,7 +8,7 @@ import { Menu, Segment, Icon, Input, TextArea } from 'semantic-ui-react'
 const NavBar = () => (
   <Menu secondary>
     <Menu.Item>
-      <Link to="/library">
+      <Link to="/search">
         <Icon size="large" inverted color="black" name='search'/>
       </Link>
     </Menu.Item>
