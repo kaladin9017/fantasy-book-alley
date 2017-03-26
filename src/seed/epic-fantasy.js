@@ -6,7 +6,7 @@ const epicFantasy = {
       image:"http://lytherus.com/wp-content/uploads/2012/05/Memory-of-Light_WoT_Michael-Whelan.jpg"
     },
     2: {
-      title: "Wizard\'s First Rule",
+      title: "Wizard's First Rule",
       author: "Terry Goodkind",
       description: "The first book in the Sword of Truth series introduces a classic Epic Fantasy story with an unlikely hero fighting against evil.",
       image:"http://vignette1.wikia.nocookie.net/sot/images/f/fe/Wizards_first_rule.jpg/revision/latest?cb=20070518050851"
@@ -32,7 +32,7 @@ const epicFantasy = {
     6: {
       title: "The Chronicles of Thomas Covenant",
       author: "Stephen R. Donaldson",
-      description: "Epic Fantasy that\'s also very High Fantasy. Features an antihero hero.",
+      description: "Epic Fantasy that's also very High Fantasy. Features an antihero hero.",
       image:"https://images-na.ssl-images-amazon.com/images/I/4120G0MBJ3L._SY344_BO1,204,203,200_.jpg"
     },
     7: {

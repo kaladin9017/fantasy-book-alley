@@ -3,7 +3,7 @@ import {
   Link
 } from 'react-router-dom';
 
-import { Menu, Segment, Icon, Input, TextArea } from 'semantic-ui-react'
+import { Menu, Icon, Input } from 'semantic-ui-react'
 
 const NavBar = () => (
   <Menu secondary>

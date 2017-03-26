@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import RouteWithSubRoute from './components/common/RouteWithSubRoute';
-import BookCarousel from './components/common/BookCarousel';
+import BookCarousel from './components/carousels/BookCarousel';
+import FeaturedBook from './components/common/FeaturedBook';
 
 
 
@@ -19,7 +20,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <BookCarousel books={books} />
+        <FeaturedBook />
         <BookCarousel books={books} />
         {this.props.routes.map((route, i) => (
           <RouteWithSubRoute key={i} {...route}/>
