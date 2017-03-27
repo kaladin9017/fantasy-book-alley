@@ -1,54 +1,41 @@
 import React, { Component } from 'react';
 
-import { Menu, Icon, Popup } from 'semantic-ui-react'
+import { Header} from 'semantic-ui-react'
+import './styles/CategoryCarousel.css';
 
-import './styles/carousel.css';
-
-const BookTile = ({ book }) => (
-  <div className="tile">
-    <div className="tile__media">
-      <img className="tile__img" src={book.image} alt=""  />
+const CategoryTile = ({ category, changeCategory }) => (
+  <div className="category" onClick={changeCategory.bind(this,category)}>
+    <div className="category__media">
+      <img className="category__img" src={category.image} alt=""  />
     </div>
-    <div className="tile__details">
-      <div className="tile__title">
-
-        <Menu secondary fluid widths={3}>
-          <Menu.Item>
-            <Popup
-              trigger={<Icon inverted name='info' circular />}
-              content={book.description}
-              offset={50}
-              position='right center'
-            />
-            <Menu.Item>
-              <Icon inverted name="remove bookmark" circular/>
-            </Menu.Item>
-          </Menu.Item>
-          <Menu.Item >
-            <Icon inverted name="like" circular />
-          </Menu.Item>
-        </Menu>
+    <div className="category__details">
+      <div className="category__title">
+        <Header color="yellow" as='h2' icon textAlign='center'>
+          { category.name }
+        </Header>
       </div>
     </div>
   </div>
 )
 
 
-class BookCarousel extends Component {
+class CategoryCarousel extends Component {
+  handleChange(category) {
+    this.props.changeCategory(category);
+  }
+  render() {
+    let categories = [];
+      this.props.categories.map((category) => {
+        return categories.push( <CategoryTile changeCategory={this.props.changeCategory.bind(this)} category={category} key={category.image} /> )
+      });
 
-    render() {
-      let books = []
-        this.props.books.map((book) => {
-          return books.push( <BookTile book={book} key={book.title} /> )
-        });
-
-        return(
-          <div className="row">
-            <div className="row__inner">
-              { books }
-            </div>
+      return(
+        <div className="row">
+          <div className="row__inner">
+            { categories }
           </div>
-        )
-    }
+        </div>
+      )
+  }
 }
-export default BookCarousel
+export default CategoryCarousel

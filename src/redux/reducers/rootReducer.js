@@ -2,11 +2,11 @@ import { combineReducers } from 'redux';
 
 import { routerReducer } from 'react-router-redux';
 
-import exampleReducer from './exampleReducer';
+import categoryReducer from './categoryReducer';
 // import pageInfoReducer from './pageInfoReducer';
 
 const rootReducer = combineReducers({
-  example: exampleReducer,
+  categories: categoryReducer,
   router: routerReducer
 });
 

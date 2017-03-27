@@ -1,5 +1,8 @@
 .featured-display {
-  width: 296px;
-  height: 222px;
-  background-color: #667482;
+  /*width: 100%;
+  height: 600px;*/
+}
+.featured-book {
+  margin: 16px;
+  overflow: auto;
 }

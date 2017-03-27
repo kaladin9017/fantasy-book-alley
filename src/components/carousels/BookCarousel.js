@@ -40,7 +40,7 @@ class BookCarousel extends Component {
     render() {
       let books = []
         this.props.books.map((book) => {
-          return books.push( <BookTile book={book} key={book.title} /> )
+          return books.push( <BookTile book={book} key={book.description} /> )
         });
 
         return(
