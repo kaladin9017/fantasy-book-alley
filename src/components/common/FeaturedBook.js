@@ -3,20 +3,20 @@ import React from 'react';
 import './styles/styles.css';
 import { Grid, Image, Button, Header } from 'semantic-ui-react'
 
-const FeaturedBook = () => (
+const FeaturedBook = ({book}) => (
     <div className="featured-display">
       <Grid centered columns={3}>
         <Grid.Column>
-          <Image src="http://www.torforgeblog.com/wp-content/uploads/2016/03/wordsofradiance-809x538.jpg" size='big' />
+          <Image src={book.image} size='big' />
         </Grid.Column>
         <Grid.Row centered>
-            <Header as="h5">Words Of Radiance</Header>
+            <Header as="h5">{book.title}</Header>
             <br/>
         </Grid.Row>
         <Grid.Row centered columns={2}>
           <Grid.Column>
             <p>
-              “The best part...is the compelling, complex story of Dalinar, Kaladin, and Shallan as they struggle though emotional, physical, and moral challenges. Fans and lovers of epic fantasy...will eagerly await the next volume.” ―Library Journal on The Way of Kings
+              {book.description}
             </p>
           </Grid.Column>
         </Grid.Row>

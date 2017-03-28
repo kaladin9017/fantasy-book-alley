@@ -4,7 +4,7 @@ import { Icon, Popup, Grid } from 'semantic-ui-react'
 
 import './styles/carousel.css';
 
-const BookTile = ({ book, bookmark }) => (
+const BookTile = ({ book, bookmark, select }) => (
   <div className="tile">
     <div className="tile__media">
       <img className="tile__img" src={book.image} alt=""  />
@@ -24,7 +24,7 @@ const BookTile = ({ book, bookmark }) => (
             <Icon inverted name="remove bookmark" circular onClick={bookmark.bind(this,book)} />
           </Grid.Column>
           <Grid.Column>
-            <Icon inverted name="like" circular />
+            <Icon inverted name="hand lizard" circular onClick={select.bind(this,book)} />
           </Grid.Column>
         </Grid>
 
@@ -39,10 +39,13 @@ class BookCarousel extends Component {
   handlClick(book) {
     this.props.addBook(book)
   }
+  handleSelect(book) {
+    this.props.selectBook(book)
+  }
   render() {
     let books = []
       this.props.books.map((book) => {
-        return books.push( <BookTile book={book} key={book.description} bookmark={this.handlClick.bind(this)} /> )
+        return books.push( <BookTile book={book} key={book.description} bookmark={this.handlClick.bind(this)} select={this.handleSelect.bind(this)} /> )
       });
 
       return(

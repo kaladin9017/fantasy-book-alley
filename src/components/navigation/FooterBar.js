@@ -11,7 +11,7 @@ export default class FooterBar extends Component {
     const { activeItem } = this.state
 
     return (
-      <Menu secondary fluid widths={3} fixed={"bottom"}>
+      <Menu fluid widths={3} fixed={"bottom"}>
         <Menu.Item active={activeItem === 'search'} name='search'>
           <Link to="/search">
             <Icon size="large" inverted color="black" name='search'/>

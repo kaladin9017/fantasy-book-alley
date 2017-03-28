@@ -5,16 +5,17 @@
   position: relative;
   width: 75%;
   margin-bottom: 1rem;
-  background: #a0d695;
-  border: 10px #bee3b6 solid;
-  border-bottom: 30px #bee3b6 solid;
+  background: rgb(212, 200, 196);
+  border: 10px solid;
+  border-color: rgb(234, 222, 218);
+  border-bottom: 30px rgb(234, 222, 218) solid;
 }
 .bookcase .bookcase-left-side,
 .bookcase .bookcase-right-side {
   position: absolute;
   width: 16px;
   height: 100%;
-  background: #85cb78;
+  background: rgba(33, 33, 33, 0.18);
   top: 0;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -34,7 +35,6 @@
   margin-top: 2rem;
   perspective: 1000px;
 }
-
 .shelf {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -44,7 +44,7 @@
   content: '';
   left: 8px;
   bottom: -25px;
-  background: #B7E0AF;
+  background: rgb(234, 222, 218);
   width: calc(100% - 16px);
   height: 67px;
   -webkit-transform: rotateX(75deg);
@@ -64,7 +64,7 @@
   width: calc(100%);
   left: 0;
   bottom: -14px;
-  background: #B7E0AF;
+  background: rgb(234, 222, 218);
   background-repeat: repeat;
   box-shadow: 0 2px 8px 2px rgba(33, 33, 33, 0.12);
   height: 12px;
@@ -77,6 +77,8 @@
 
 .book {
   padding: 1rem 2rem 0.25rem;
+  width: 100%;
+  height: auto;
 }
 .book img {
   -webkit-transition: all 0.3s ease-in-out;

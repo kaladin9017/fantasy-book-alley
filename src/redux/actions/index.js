@@ -1,5 +1,6 @@
 import {
-  ADD_BOOK
+  ADD_BOOK,
+  SELECT_BOOK
 } from './types';
 
 export function changeBookCarousel (category) {
@@ -11,6 +12,12 @@ export function changeBookCarousel (category) {
 export function addBook (book) {
   return {
     type: ADD_BOOK,
+    payload: book
+  }
+}
+export function selectBook (book) {
+  return {
+    type: SELECT_BOOK,
     payload: book
   }
 }
