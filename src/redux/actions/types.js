@@ -4,3 +4,4 @@ export const LOW_FANTASY = "Low Fantasy";
 export const ANTI_HERO = "Anti-Hero Fantasy";
 export const COMING_AGE = "Coming Of Age Fantasy";
 export const YA = "Young Adult Fantasy(YA)";
+export const ADD_BOOK = "ADD_BOOK";

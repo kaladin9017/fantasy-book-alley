@@ -3,10 +3,11 @@ import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
 
 import categoryReducer from './categoryReducer';
-// import pageInfoReducer from './pageInfoReducer';
+import libraryReducer from './libraryReducer';
 
 const rootReducer = combineReducers({
   categories: categoryReducer,
+  library: libraryReducer,
   router: routerReducer
 });
 

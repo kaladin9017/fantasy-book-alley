@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Menu, Icon } from 'semantic-ui-react'
+import { Link } from 'react-router-dom';
 
 export default class FooterBar extends Component {
   state = {}
@@ -10,15 +11,21 @@ export default class FooterBar extends Component {
     const { activeItem } = this.state
 
     return (
-      <Menu secondary fluid widths={3}>
-        <Menu.Item active={activeItem === 'search'} name='search' onClick={this.handleItemClick}>
-          <Icon size="large" inverted color="black" name='search'/>
+      <Menu secondary fluid widths={3} fixed={"bottom"}>
+        <Menu.Item active={activeItem === 'search'} name='search'>
+          <Link to="/search">
+            <Icon size="large" inverted color="black" name='search'/>
+          </Link>
         </Menu.Item>
-        <Menu.Item active={activeItem === 'book'} name='book' onClick={this.handleItemClick}>
-          <Icon size="large" inverted color="black" name='book'/>
+        <Menu.Item active={activeItem === 'book'} name='book'>
+          <Link to="/library">
+            <Icon size="large" inverted color="black" name='book'/>
+          </Link>
         </Menu.Item>
-        <Menu.Item active={activeItem === 'home'} name='home' onClick={this.handleItemClick}>
-          <Icon size="large" inverted color="black" name='home'/>
+        <Menu.Item active={activeItem === 'home'} name='home'>
+          <Link to="/">
+            <Icon size="large" inverted color="black" name='home'/>
+          </Link>
         </Menu.Item>
       </Menu>
     )

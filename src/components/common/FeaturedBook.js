@@ -14,7 +14,7 @@ const FeaturedBook = () => (
             <br/>
         </Grid.Row>
         <Grid.Row centered columns={2}>
-          <Grid.Column centered>
+          <Grid.Column>
             <p>
               “The best part...is the compelling, complex story of Dalinar, Kaladin, and Shallan as they struggle though emotional, physical, and moral challenges. Fans and lovers of epic fantasy...will eagerly await the next volume.” ―Library Journal on The Way of Kings
             </p>
@@ -22,8 +22,8 @@ const FeaturedBook = () => (
         </Grid.Row>
         <Grid.Row centered>
           <center >
-            <Button basic>See Reviews</Button>
-            <Button basic>Read Now</Button>
+            <Button primary>See Reviews</Button>
+            <Button positive>Read Now</Button>
           </center>
         </Grid.Row>
       </Grid>

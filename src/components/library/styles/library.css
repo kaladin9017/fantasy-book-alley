@@ -1,0 +1,108 @@
+.bookcase {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  width: 75%;
+  margin-bottom: 1rem;
+  background: #a0d695;
+  border: 10px #bee3b6 solid;
+  border-bottom: 30px #bee3b6 solid;
+}
+.bookcase .bookcase-left-side,
+.bookcase .bookcase-right-side {
+  position: absolute;
+  width: 16px;
+  height: 100%;
+  background: #85cb78;
+  top: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.bookcase .bookcase-left-side {
+  left: 0;
+  box-shadow: inset -3px 0 15px rgba(33, 33, 33, 0.18);
+}
+.bookcase .bookcase-right-side {
+  right: 0;
+  box-shadow: inset 3px 0 15px rgba(33, 33, 33, 0.18);
+}
+
+.shelf-row {
+  position: relative;
+  margin-top: 2rem;
+  perspective: 1000px;
+}
+
+.shelf {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: block;
+  position: absolute;
+  content: '';
+  left: 8px;
+  bottom: -25px;
+  background: #B7E0AF;
+  width: calc(100% - 16px);
+  height: 67px;
+  -webkit-transform: rotateX(75deg);
+  -moz-transform: rotateX(75deg);
+  -o-transition: rotateX(75deg);
+  transition: rotateX(75deg);
+  z-index: -1;
+}
+
+.shelf-thickness {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: block;
+  position: absolute;
+  content: '';
+  width: calc(100%);
+  left: 0;
+  bottom: -14px;
+  background: #B7E0AF;
+  background-repeat: repeat;
+  box-shadow: 0 2px 8px 2px rgba(33, 33, 33, 0.12);
+  height: 12px;
+  z-index: -2;
+}
+
+.shelf-row:last-of-type > .shelf-thickness {
+  display: none;
+}
+
+.book {
+  padding: 1rem 2rem 0.25rem;
+}
+.book img {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0px 2px 1px rgba(33, 33, 33, 0.5);
+}
+
+.flexbox-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+
+.flexbox-align-center {
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+}
+
+.flexbox-justify {
+  -webkit-justify-content: center;
+  justify-content: center;
+}

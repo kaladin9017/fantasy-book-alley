@@ -8,11 +8,16 @@ import CategoryCarousel from './components/carousels/CategoryCarousel';
 import FeaturedBook from './components/common/FeaturedBook';
 
 // ACTIONS
-import { changeBookCarousel } from './redux/actions/index';
+import { changeBookCarousel, addBook } from './redux/actions/index';
 
 class App extends Component {
+
   handleChange(category) {
     this.props.changeBookCarousel(category)
+  }
+
+  addBookToLibrary(book) {
+    this.props.addBook(book);
   }
 
   render() {
@@ -24,7 +29,7 @@ class App extends Component {
     return (
       <div className="App">
         <FeaturedBook />
-        <BookCarousel books={books} />
+        <BookCarousel books={books} addBook={this.addBookToLibrary.bind(this)}/>
         <CategoryCarousel changeCategory={this.handleChange.bind(this)} categories={this.props.state.categories.categories} />
         {this.props.routes.map((route, i) => (
           <RouteWithSubRoute key={i} {...route}/>
@@ -39,4 +44,5 @@ function mapStateToProps(state) {
     state
   }
 }
-export default connect(mapStateToProps, { changeBookCarousel })(App);
+
+export default connect(mapStateToProps, { changeBookCarousel, addBook })(App);
