@@ -1,28 +1,31 @@
-import React, { Component } from 'react'
-import { Menu, Icon } from 'semantic-ui-react'
-import { Link } from 'react-router-dom';
+import React from 'react';
+import {
+  Link
+} from 'react-router-dom';
 
-export default class FooterBar extends Component {
-  state = {}
+import { Menu, Icon, Header } from 'semantic-ui-react'
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+const FooterBar = () => (
+  <Menu secondary borderless>
+    <Menu.Item>
+      <Link to="/">
+        <Icon size="big" inverted color="black" name='home'/>
+      </Link>
+    </Menu.Item>
 
-  render() {
-    const { activeItem } = this.state
+    <Menu.Item position='right'>
+      <Link to="/library">
+        <Header as='h3'>
+          <Icon.Group size='large'>
+            <Icon name='book' />
+          </Icon.Group>
+          Library
+        </Header>
+      </Link>
+    </Menu.Item>
 
-    return (
-      <Menu fluid widths={3} fixed={"bottom"}>
-        <Menu.Item active={activeItem === 'book'} name='book'>
-          <Link to="/library">
-            <Icon size="large" inverted color="black" name='book'/>
-          </Link>
-        </Menu.Item>
-        <Menu.Item active={activeItem === 'home'} name='home'>
-          <Link to="/">
-            <Icon size="large" inverted color="black" name='home'/>
-          </Link>
-        </Menu.Item>
-      </Menu>
-    )
-  }
-}
+  </Menu>
+
+)
+
+export default FooterBar;

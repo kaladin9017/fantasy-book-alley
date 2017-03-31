@@ -140,3 +140,9 @@ body {
   cursor: pointer;
   background-color: white !important;
 }
+
+
+/*HEADER*/
+.header {
+  align-self: center;
+}
