@@ -21,10 +21,20 @@ const BookTile = ({ book, bookmark, select }) => (
             />
           </Grid.Column>
           <Grid.Column>
-            <Icon inverted className="icons" name="remove bookmark" circular onClick={bookmark.bind(this,book)} />
+            <Popup
+              trigger={ <Icon inverted className="icons" name="remove bookmark" circular onClick={bookmark.bind(this,book)} /> }
+              content={"Bookmark/Save to Library"}
+              offset={50}
+              position='right center'
+            />
           </Grid.Column>
           <Grid.Column>
-            <Icon inverted className="icons" name="eye" circular onClick={select.bind(this,book)} />
+            <Popup
+              trigger={ <Icon inverted className="icons" name="eye" circular onClick={select.bind(this,book)} /> }
+              content={"Select"}
+              offset={50}
+              position='right center'
+            />
           </Grid.Column>
         </Grid>
 

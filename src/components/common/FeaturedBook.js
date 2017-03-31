@@ -10,7 +10,7 @@ import $ from 'jquery';
 class FeaturedBook extends Component {
   constructor(props) {
     super(props)
-    this.state = { review: '' }
+    this.state = { review: '', modalOpen: false }
   }
   getReviews() {
     console.log();
@@ -44,12 +44,20 @@ class FeaturedBook extends Component {
         'display': 'none'
     });
   }
+
+  handleOpen = (e) => this.setState({
+    modalOpen: true,
+  })
+
+  handleClose = (e) => this.setState({
+    modalOpen: false,
+  })
   render() {
     this.getReviews();
     return (
       <div className="featured-display">
         <Segment.Group raised >
-            <Segment inverted>
+            <Segment>
               <Image centered src={this.props.book.image} size='small' />
               <br/>
               <Grid centered columns={3}>
@@ -68,13 +76,13 @@ class FeaturedBook extends Component {
               </Grid.Row>
               <Grid.Row centered>
                 <center>
-                  <Modal trigger={<Button>Reviews</Button>} basic size='small'>
+                  <Modal open={this.state.modalOpen} trigger={<Button onClick={this.handleOpen.bind(this)}>Reviews</Button>} basic size='small'>
                     <Header icon='comment' content='Review' />
                     <Modal.Content>
                       <p>Reviews coming soon</p>
                     </Modal.Content>
                     <Modal.Actions>
-                      <Button basic color='red' inverted>
+                      <Button basic color='red' inverted onClick={this.handleClose.bind(this)}>
                          Close
                       </Button>
                       <Button color='green' inverted>
