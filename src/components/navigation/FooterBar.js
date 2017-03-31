@@ -12,11 +12,6 @@ export default class FooterBar extends Component {
 
     return (
       <Menu fluid widths={3} fixed={"bottom"}>
-        <Menu.Item active={activeItem === 'search'} name='search'>
-          <Link to="/search">
-            <Icon size="large" inverted color="black" name='search'/>
-          </Link>
-        </Menu.Item>
         <Menu.Item active={activeItem === 'book'} name='book'>
           <Link to="/library">
             <Icon size="large" inverted color="black" name='book'/>

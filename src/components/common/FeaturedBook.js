@@ -1,33 +1,101 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import './styles/styles.css';
-import { Grid, Image, Button, Header } from 'semantic-ui-react'
+import { Grid, Image, Button, Header, Modal, Segment } from 'semantic-ui-react'
 
-const FeaturedBook = ({book}) => (
-    <div className="featured-display">
-      <Grid centered columns={3}>
-        <Grid.Column>
-          <Image src={book.image} size='big' />
-        </Grid.Column>
-        <Grid.Row centered>
-            <Header as="h5">{book.title}</Header>
-            <br/>
-        </Grid.Row>
-        <Grid.Row centered columns={2}>
-          <Grid.Column>
-            <p>
-              {book.description}
-            </p>
-          </Grid.Column>
-        </Grid.Row>
-        <Grid.Row centered>
-          <center >
-            <Button primary>See Reviews</Button>
-            <Button positive>Read Now</Button>
-          </center>
-        </Grid.Row>
-      </Grid>
-    </div>
-)
+import axios from 'axios';
+import striptags from 'striptags';
+import $ from 'jquery';
+
+class FeaturedBook extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { review: '' }
+  }
+  getReviews() {
+    console.log();
+    axios(`https://www.goodreads.com/book/title.xml?key=${process.env.REACT_APP_GOOD_READS_KEY}&title=${this.props.book.title.split(' ').join('+')}`)
+      .then((data) => {
+        let first = data.data.indexOf('description') + 21;
+        let second = data.data.indexOf('</description>') - first - 3;
+        this.setState({review: striptags(data.data.substr(first, second))})
+      })
+  }
+  readText() {
+    $('.text-description').css({
+        'height': 'auto'
+    });
+    $('#more').css({
+        'display': 'none'
+    });
+    $('#less').css({
+        'display': 'initial'
+    });
+  }
+
+  hideText() {
+    $('.text-description').css({
+        'height': '50px'
+    });
+    $('#more').css({
+        'display': 'initial'
+    });
+    $('#less').css({
+        'display': 'none'
+    });
+  }
+  render() {
+    this.getReviews();
+    return (
+      <div className="featured-display">
+        <Segment.Group raised >
+            <Segment inverted>
+              <Image centered src={this.props.book.image} size='small' />
+              <br/>
+              <Grid centered columns={3}>
+                <Grid.Row centered>
+                <Header as="h5">{this.props.book.title}</Header>
+                <br/>
+              </Grid.Row>
+              <Grid.Row centered columns={2}>
+                <Grid.Column>
+                  <p className='text-description'>
+                    { this.state.review }
+                  </p>
+                   { this.state.review.length > 100 ? <a id="more" onClick={this.readText}>more</a> : null }
+                   <a id="less" onClick={this.hideText}>less</a>
+                </Grid.Column>
+              </Grid.Row>
+              <Grid.Row centered>
+                <center>
+                  <Modal trigger={<Button>Reviews</Button>} basic size='small'>
+                    <Header icon='comment' content='Review' />
+                    <Modal.Content>
+                      <p>Reviews coming soon</p>
+                    </Modal.Content>
+                    <Modal.Actions>
+                      <Button basic color='red' inverted>
+                         Close
+                      </Button>
+                      <Button color='green' inverted>
+                         Read Now
+                      </Button>
+                    </Modal.Actions>
+                  </Modal>
+                  {/* <Button positive>Read Now</Button> */}
+                </center>
+              </Grid.Row>
+            </Grid>
+          </Segment>
+        </Segment.Group>
+
+        <br/>
+
+      </div>
+    )
+  }
+
+}
+
 
 export default FeaturedBook;

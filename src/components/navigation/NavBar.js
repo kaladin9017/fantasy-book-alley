@@ -3,26 +3,21 @@ import {
   Link
 } from 'react-router-dom';
 
-import { Menu, Icon, Input } from 'semantic-ui-react'
+import { Menu, Icon } from 'semantic-ui-react'
 
 const NavBar = () => (
-  <Menu secondary>
+  <Menu secondary borderless>
     <Menu.Item>
-      <Link to="/search">
-        <Icon size="large" inverted color="black" name='search'/>
+      <Link to="/">
+        <Icon size="big" inverted color="black" name='home'/>
       </Link>
     </Menu.Item>
-
-      <Menu.Item>
-        <Input size="big" placeholder='Search...' transparent />
-      </Menu.Item>
 
     <Menu.Item position='right'>
       <Link to="/library">
-        <Icon inverted color="black" size='large' name='book'/>
+        <Icon inverted color="black" size='big' name='book'/>
       </Link>
     </Menu.Item>
-
 
   </Menu>
 

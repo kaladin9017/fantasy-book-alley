@@ -1,5 +1,6 @@
 import epicFantasy from '../../seed/epic-fantasy';
 import lowFantasy from '../../seed/low-fantasy';
+import antiFantasy from '../../seed/anti-fantasy';
 
 import {
   BEST_OF_2016,
@@ -30,6 +31,8 @@ export default function(state = initialState, action) {
     return Object.assign({}, state, {featured: epicFantasy})
     case LOW_FANTASY:
     return Object.assign({}, state, {featured: lowFantasy})
+    case ANTI_HERO:
+    return Object.assign({}, state, {featured: antiFantasy})
     default:
       return state;
   }

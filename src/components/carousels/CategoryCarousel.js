@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Header} from 'semantic-ui-react'
+import { Header, Icon } from 'semantic-ui-react'
 import './styles/CategoryCarousel.css';
 
 const CategoryTile = ({ category, changeCategory }) => (
@@ -10,7 +10,7 @@ const CategoryTile = ({ category, changeCategory }) => (
     </div>
     <div className="category__details">
       <div className="category__title">
-        <Header color="yellow" as='h2' icon textAlign='center'>
+        <Header block as='h2' textAlign='center'>
           { category.name }
         </Header>
       </div>
@@ -30,8 +30,14 @@ class CategoryCarousel extends Component {
       });
 
       return(
-        <div className="row">
-          <div className="row__inner">
+        <div className="categoryrow">
+          <div className="categoryrow__inner">
+            <Header as='h3'>
+              <Icon name='tags' />
+              <Header.Content>
+                Catergories
+              </Header.Content>
+            </Header>
             { categories }
           </div>
         </div>

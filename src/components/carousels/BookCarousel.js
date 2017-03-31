@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Icon, Popup, Grid } from 'semantic-ui-react'
+import { Icon, Popup, Grid, Header } from 'semantic-ui-react'
 
 import './styles/carousel.css';
 
@@ -14,17 +14,17 @@ const BookTile = ({ book, bookmark, select }) => (
         <Grid columns='equal'>
           <Grid.Column>
             <Popup
-              trigger={<Icon inverted name='info' circular />}
+              trigger={<Icon inverted className="icons" name='info' circular />}
               content={book.description}
               offset={50}
               position='right center'
             />
           </Grid.Column>
           <Grid.Column>
-            <Icon inverted name="remove bookmark" circular onClick={bookmark.bind(this,book)} />
+            <Icon inverted className="icons" name="remove bookmark" circular onClick={bookmark.bind(this,book)} />
           </Grid.Column>
           <Grid.Column>
-            <Icon inverted name="hand lizard" circular onClick={select.bind(this,book)} />
+            <Icon inverted className="icons" name="eye" circular onClick={select.bind(this,book)} />
           </Grid.Column>
         </Grid>
 
@@ -51,6 +51,12 @@ class BookCarousel extends Component {
       return(
         <div className="row">
           <div className="row__inner">
+            <Header as='h3'>
+              <Icon name='filter' />
+              <Header.Content>
+                {this.props.books[0].category}
+              </Header.Content>
+            </Header>
             { books }
           </div>
         </div>

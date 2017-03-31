@@ -57,7 +57,9 @@
     "semantic-ui": "^2.2.9",
     "semantic-ui-css": "^2.2.9",
     "semantic-ui-react": "^0.67.1",
-    "tinyreq": "^3.2.1"
+    "striptags": "^3.0.1",
+    "tinyreq": "^3.2.1",
+    "xml-parser": "^1.2.1"
   },
   "scripts": {
     "start": "node scripts/start.js",

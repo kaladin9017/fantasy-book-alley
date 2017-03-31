@@ -45,7 +45,7 @@ class Library extends Component {
           <div className='bookcase-left-side bookcase-side'></div>
           <div className='bookcase-right-side bookcase-side'></div>
           <div className='shelfs'>
-            { shelves }
+            { this.props.library.length !== 0 ? shelves : <h2>You have no books saved</h2> }
           </div>
         </div>
 

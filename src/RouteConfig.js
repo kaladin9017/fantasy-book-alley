@@ -14,7 +14,7 @@ import BookPage from './components/books/BookPage';
 
 // Navigation
 import NavBar from './components/navigation/NavBar';
-import FooterBar from './components/navigation/FooterBar';
+// import FooterBar from './components/navigation/FooterBar';
 //
 
 const routes = [
@@ -59,7 +59,7 @@ const RouteConfig = () => (
       {routes.map((route, i) => (
         <RouteWithSubRoutes key={i} {...route}/>
       ))}
-      <FooterBar/>
+      <NavBar/>
     </div>
   </Router>
 )

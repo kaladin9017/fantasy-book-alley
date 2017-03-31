@@ -7,6 +7,7 @@ import BookCarousel from './components/carousels/BookCarousel';
 import CategoryCarousel from './components/carousels/CategoryCarousel';
 import FeaturedBook from './components/common/FeaturedBook';
 
+
 // ACTIONS
 import { changeBookCarousel, addBook, selectBook } from './redux/actions/index';
 
@@ -24,7 +25,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.props)
     let books = []
 
       for(let key in this.props.state.categories.featured) {

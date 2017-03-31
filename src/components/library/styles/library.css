@@ -3,7 +3,7 @@
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   position: relative;
-  width: 75%;
+  width: 98%;
   margin-bottom: 1rem;
   background: rgb(212, 200, 196);
   border: 10px solid;
@@ -77,7 +77,7 @@
 
 .book {
   padding: 1rem 2rem 0.25rem;
-  width: 100%;
+  width: 33%;
   height: auto;
 }
 .book img {
@@ -88,6 +88,16 @@
   height: auto;
   box-shadow: 0 0px 2px 1px rgba(33, 33, 33, 0.5);
 }
+
+.book img:hover {
+  -webkit-transform: translate(0, -10px);
+  -moz-transform: translate(0, -10px);
+  -o-transform: translate(0, -10px);
+  transform: translate(0, -10px);
+  box-shadow: 0 2px 2px 1px rgba(33, 33, 33, 0.3);
+}
+
+
 
 .flexbox-row {
   display: -webkit-box;

@@ -1,25 +1,26 @@
 
-.row a:link,
-.row a:hover,
-.row a:active,
-.row a:visited {
+.categoryrow a:link,
+.categoryrow a:hover,
+.categoryrow a:active,
+.categoryrow a:visited {
   -webkit-transition: color 150ms;
   transition: color 150ms;
   color: #95a5a6;
   text-decoration: none;
 }
-.row a:hover {
+.categoryrow a:hover {
   color: #7f8c8d;
   text-decoration: underline;
 }
 .contain {
   width: 100%;
 }
-.row {
+.categoryrow {
+  background-color: #FAFAFA;
   overflow: scroll;
   width: 100%;
 }
-.row__inner {
+.categoryrow__inner {
   -webkit-transition: 450ms -webkit-transform;
   transition: 450ms -webkit-transform;
   transition: 450ms transform;
@@ -106,14 +107,14 @@
   bottom: 0;
   padding: 10px;
 }
-.row__inner:hover {
+.categoryrow__inner:hover {
   -webkit-transform: translate3d(-62.5px, 0, 0);
           transform: translate3d(-62.5px, 0, 0);
 }
-.row__inner:hover .category {
+.categoryrow__inner:hover .category {
   opacity: 0.3;
 }
-.row__inner:hover .category:hover {
+.categoryrow__inner:hover .category:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
   opacity: 1;
