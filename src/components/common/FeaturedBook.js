@@ -13,8 +13,13 @@ class FeaturedBook extends Component {
     this.state = { review: '', modalOpen: false }
   }
   getReviews() {
-    console.log();
-    axios(`https://www.goodreads.com/book/title.xml?key=${process.env.REACT_APP_GOOD_READS_KEY}&title=${this.props.book.title.split(' ').join('+')}`)
+    let config = {
+      headers : {
+        "Access-Control-Allow-Origin": "*"
+      }
+    }
+
+    axios(`https://crossorigin.me/https://www.goodreads.com/book/title.xml?key=${process.env.REACT_APP_GOOD_READS_KEY}&title=${this.props.book.title.split(' ').join('+')}`)
       .then((data) => {
         let first = data.data.indexOf('description') + 21;
         let second = data.data.indexOf('</description>') - first - 3;
