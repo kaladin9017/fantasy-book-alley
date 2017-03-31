@@ -1,6 +1,7 @@
 const antiFantasy = {
   1 : {
     title : 'Prince Of Thorns',
+    category : 'Anti Hero Fantasy',
     author : ' Mark Lawrence',
     series : 'The Broken Empire',
     image: 'http://ecx.images-amazon.com/images/I/51ox1fP0uaL._SY110_CR0,0,80,110.jpg',
@@ -8,6 +9,7 @@ const antiFantasy = {
   },
   2 : {
     title : 'Lord Foul\'s Bane',
+    category : 'Anti Hero Fantasy',
     author : 'Stephen R. Donaldson',
     series : 'The Chronicles of Thomas Covenant the Unbeliever',
     image : 'http://ecx.images-amazon.com/images/I/519KDVo5a0L._SY110_CR0,0,80,110.jpg',
@@ -15,6 +17,7 @@ const antiFantasy = {
   },
   3 : {
       title : 'The Blade Itself',
+      category : 'Anti Hero Fantasy',
       author : 'Joe Abercrombie',
       series : 'The First Law',
       image: "http://ecx.images-amazon.com/images/I/61QA2ffwWlL._SY110_CR0,0,80,110.jpg",
@@ -22,6 +25,7 @@ const antiFantasy = {
     },
   4 : {
     title : 'The Darkness That Comes Before',
+    category : 'Anti Hero Fantasy',
     author : 'R. Scott Bakker',
     series : 'The Prince of Nothing',
     image : "http://ecx.images-amazon.com/images/I/51gDW8Rw1NL._SY110_CR0,0,80,110.jpg",
@@ -29,6 +33,7 @@ const antiFantasy = {
   },
   5 : {
     title : 'The Steel Remains',
+    category : 'Anti Hero Fantasy',
     author : 'Richard K. Morgan',
     series : 'A Land Fit for Heroes',
     image: "http://ecx.images-amazon.com/images/I/51R-n0gh1lL._SY110_CR0,0,80,110.jpg",
@@ -36,6 +41,7 @@ const antiFantasy = {
   },
   6 : {
     title : 'The Black Company',
+    category : 'Anti Hero Fantasy',
     author : 'Glen Cook',
     series : 'The Chronicles of the Black Company',
     image: "http://ecx.images-amazon.com/images/I/51awxmk1jYL._SY110_CR0,0,80,110.jpg",
@@ -43,6 +49,7 @@ const antiFantasy = {
   },
   7 : {
     title : 'Prince Of Fools',
+    category : 'Anti Hero Fantasy',
     author : 'Mark Lawrence',
     series : 'The Red Queen\'s War',
     image: "http://ecx.images-amazon.com/images/I/51hSmuqYsDL._SY110_CR0,0,80,110.jpg",
@@ -50,6 +57,7 @@ const antiFantasy = {
   },
   8 : {
     title : 'Heroes Die',
+    category : 'Anti Hero Fantasy',
     author : 'Matthew Woodring Stover',
     series : 'The Acts of Caine',
     image: "http://ecx.images-amazon.com/images/I/51F5qaDrI4L._SY110_CR0,0,80,110.jpg",
@@ -57,6 +65,7 @@ const antiFantasy = {
   },
   9 : {
     title : 'Black Sun Rising',
+    category : 'Anti Hero Fantasy',
     author : 'C.S. Friedman',
     series : 'The Coldfire',
     image: "http://ecx.images-amazon.com/images/I/51nnyAqxfaL._SY110_CR0,0,80,110.jpg",
@@ -64,6 +73,7 @@ const antiFantasy = {
   },
   10 : {
     title : 'Scourge Of The Betrayer',
+    category : 'Anti Hero Fantasy',
     author : 'Jeff Salyards',
     series : 'Bloodsounder\'s Arc',
     image: "http://ecx.images-amazon.com/images/I/51X-vy1uP5L._SY110_CR0,0,80,110.jpg",
@@ -71,6 +81,7 @@ const antiFantasy = {
   },
   11 : {
     title : 'Elric Of Melnibone',
+    category : 'Anti Hero Fantasy',
     author : 'Michael Moorcock',
     series : 'Elric',
     image: "http://ecx.images-amazon.com/images/I/51ajxUIQTeL._SY110_CR0,0,80,110.jpg",
@@ -78,6 +89,7 @@ const antiFantasy = {
   },
   12 : {
     title : 'The Lies Of Locke Lamora',
+    category : 'Anti Hero Fantasy',
     author : 'Scott Lynch',
     series : 'Gentleman Bastards',
     image: "http://ecx.images-amazon.com/images/I/51tpIK8K%2BtL._SY110_CR0,0,80,110.jpg",
@@ -85,6 +97,7 @@ const antiFantasy = {
   },
   13 : {
     title : 'The Book of the New Sun',
+    category : 'Anti Hero Fantasy',
     author : 'Gene Wolfe',
     series : 'The Book Of The New Sun',
     image: "http://ecx.images-amazon.com/images/I/41MjvZt%2BtZL._SY110_CR0,0,80,110.jpg",
@@ -92,6 +105,7 @@ const antiFantasy = {
   },
   14 : {
     title : 'The Grim Company',
+    category : 'Anti Hero Fantasy',
     author : 'Luke Scull',
     series : 'The Grim Company',
     image: "http://ecx.images-amazon.com/images/I/51y1npkIKEL._SY110_CR0,0,80,110.jpg",
@@ -99,6 +113,7 @@ const antiFantasy = {
   },
   15 : {
     title : 'Herald Of The Storm',
+    category : 'Anti Hero Fantasy',
     author : 'Richard FordSteel',
     series : 'Haven',
     image: "http://ecx.images-amazon.com/images/I/514NU0V8c3L._SY110_CR0,0,80,110.jpg",
@@ -106,6 +121,7 @@ const antiFantasy = {
   },
   16 : {
     title : 'The Barrow',
+    category : 'Anti Hero Fantasy',
     author : 'Mark Smylie',
     series : 'The Barrow',
     image: "http://ecx.images-amazon.com/images/I/51%2BrK7Adu0L._SY110_CR0,0,80,110.jpg",
@@ -113,6 +129,7 @@ const antiFantasy = {
   },
   17 : {
     title : 'The Witcher',
+    category : 'Anti Hero Fantasy',
     author : 'Andrzej Sapkowski',
     series : 'The Witcher',
     image: "http://ecx.images-amazon.com/images/I/51fA7fl5CwL._SY110_CR0,0,80,110.jpg",
