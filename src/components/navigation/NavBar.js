@@ -14,7 +14,7 @@ const NavBar = () => (
     </Menu.Item>
 
     <Menu.Item>
-      <h2 className="header">Discover Awesome Fantasy Books</h2>
+      <h2 className="header">Discover</h2>
     </Menu.Item>
 
     <Menu.Item content position='right'>
