@@ -13,11 +13,6 @@ class FeaturedBook extends Component {
     this.state = { review: '', modalOpen: false }
   }
   getReviews() {
-    let config = {
-      headers : {
-        "Access-Control-Allow-Origin": "*"
-      }
-    }
 
     axios(`https://crossorigin.me/https://www.goodreads.com/book/title.xml?key=${process.env.REACT_APP_GOOD_READS_KEY}&title=${this.props.book.title.split(' ').join('+')}`)
       .then((data) => {
@@ -95,10 +90,16 @@ class FeaturedBook extends Component {
                       </Button>
                     </Modal.Actions>
                   </Modal>
-                  {/* <Button positive>Read Now</Button> */}
+
+                  <a
+                    target="_blank"
+                    href={this.props.book.link}>
+                    <Button positive>Read Now</Button>
+                  </a>
                 </center>
               </Grid.Row>
             </Grid>
+
           </Segment>
         </Segment.Group>
 

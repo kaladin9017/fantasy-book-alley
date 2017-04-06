@@ -28,3 +28,7 @@
   display: none;
   cursor: pointer;
 }
+
+a {
+  cursor: pointer;
+}

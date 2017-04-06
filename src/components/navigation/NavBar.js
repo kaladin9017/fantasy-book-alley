@@ -7,7 +7,7 @@ import { Menu, Icon, Header } from 'semantic-ui-react'
 
 const NavBar = () => (
   <Menu secondary borderless>
-    <Menu.Item content>
+    <Menu.Item>
       <Link to="/">
         <Icon size="big" inverted color="black" name='home'/>
       </Link>
@@ -17,7 +17,7 @@ const NavBar = () => (
       <h2 className="header">Discover</h2>
     </Menu.Item>
 
-    <Menu.Item content position='right'>
+    <Menu.Item position='right'>
       <Link to="/library">
       <Header as='h3'>
         <Icon.Group size='large'>

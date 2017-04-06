@@ -1,6 +1,7 @@
 const antiFantasy = {
   1 : {
     title : 'Prince Of Thorns',
+    link: 'https://www.amazon.com/gp/product/1937007685/ref=as_li_tl?ie=UTF8&tag=90170d-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1937007685&linkId=6bede5f6f0470fc0a660a623f89d0cdb',
     category : 'Anti Hero Fantasy',
     author : ' Mark Lawrence',
     series : 'The Broken Empire',
@@ -9,6 +10,7 @@ const antiFantasy = {
   },
   2 : {
     title : 'Lord Foul\'s Bane',
+    link: 'https://www.amazon.com/gp/product/0345348656/ref=as_li_tl?ie=UTF8&tag=90170d-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0345348656&linkId=d3c7c1463b1b1d33af35f9ac9f3437ee',
     category : 'Anti Hero Fantasy',
     author : 'Stephen R. Donaldson',
     series : 'The Chronicles of Thomas Covenant the Unbeliever',
@@ -17,6 +19,7 @@ const antiFantasy = {
   },
   3 : {
       title : 'The Blade Itself',
+      link: 'https://www.amazon.com/gp/product/0316387312/ref=as_li_tl?ie=UTF8&tag=90170d-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0316387312&linkId=98abc3beb67a820e93f214f6e45521ea',
       category : 'Anti Hero Fantasy',
       author : 'Joe Abercrombie',
       series : 'The First Law',
@@ -25,6 +28,7 @@ const antiFantasy = {
     },
   4 : {
     title : 'The Darkness That Comes Before',
+    link: 'https://www.amazon.com/gp/product/1590201183/ref=as_li_tl?ie=UTF8&tag=90170d-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1590201183&linkId=bf477c433e3a9dabb3349b9c48d9eb12',
     category : 'Anti Hero Fantasy',
     author : 'R. Scott Bakker',
     series : 'The Prince of Nothing',
@@ -33,6 +37,7 @@ const antiFantasy = {
   },
   5 : {
     title : 'The Steel Remains',
+    link: 'https://www.amazon.com/gp/product/0345493044/ref=as_li_tl?ie=UTF8&tag=90170d-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0345493044&linkId=13bb3d104d41a13966e988e3a01e2742',
     category : 'Anti Hero Fantasy',
     author : 'Richard K. Morgan',
     series : 'A Land Fit for Heroes',
@@ -41,6 +46,7 @@ const antiFantasy = {
   },
   6 : {
     title : 'The Black Company',
+    link: 'https://www.amazon.com/gp/product/0812521390/ref=as_li_tl?ie=UTF8&tag=90170d-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0812521390&linkId=6bd64cdce9ed28bbfbc66dfd88f9078d',
     category : 'Anti Hero Fantasy',
     author : 'Glen Cook',
     series : 'The Chronicles of the Black Company',
@@ -49,6 +55,7 @@ const antiFantasy = {
   },
   7 : {
     title : 'Prince Of Fools',
+    link: 'https://www.amazon.com/gp/product/0425268799/ref=as_li_tl?ie=UTF8&tag=90170d-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0425268799&linkId=03894ab343fa64b4a11343f84880c79c',
     category : 'Anti Hero Fantasy',
     author : 'Mark Lawrence',
     series : 'The Red Queen\'s War',
@@ -57,6 +64,7 @@ const antiFantasy = {
   },
   8 : {
     title : 'Heroes Die',
+    link: 'https://www.amazon.com/gp/product/0345421450/ref=as_li_tl?ie=UTF8&tag=90170d-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0345421450&linkId=b3f2da1448271027df4c608fd9113c83',
     category : 'Anti Hero Fantasy',
     author : 'Matthew Woodring Stover',
     series : 'The Acts of Caine',
@@ -65,6 +73,7 @@ const antiFantasy = {
   },
   9 : {
     title : 'Black Sun Rising',
+    link: 'https://www.amazon.com/gp/product/0886775272/ref=as_li_tl?ie=UTF8&tag=90170d-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0886775272&linkId=c144f152203de6155269354c21956ad5',
     category : 'Anti Hero Fantasy',
     author : 'C.S. Friedman',
     series : 'The Coldfire',
@@ -73,6 +82,7 @@ const antiFantasy = {
   },
   10 : {
     title : 'Scourge Of The Betrayer',
+    link: 'https://www.amazon.com/gp/product/1597804517/ref=as_li_tl?ie=UTF8&tag=90170d-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1597804517&linkId=f902cf44de736a57fab033a22a338c2c',
     category : 'Anti Hero Fantasy',
     author : 'Jeff Salyards',
     series : 'Bloodsounder\'s Arc',
@@ -81,6 +91,7 @@ const antiFantasy = {
   },
   11 : {
     title : 'Elric Of Melnibone',
+    link: 'https://www.amazon.com/gp/product/0345498623/ref=as_li_tl?ie=UTF8&tag=90170d-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0345498623&linkId=5f24f8275f3788f15b94543a9badff28',
     category : 'Anti Hero Fantasy',
     author : 'Michael Moorcock',
     series : 'Elric',
@@ -89,6 +100,7 @@ const antiFantasy = {
   },
   12 : {
     title : 'The Lies Of Locke Lamora',
+    link: 'https://www.amazon.com/gp/product/055358894X/ref=as_li_tl?ie=UTF8&tag=90170d-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=055358894X&linkId=afc7aae55fae2fc9dee6771a21cff34f',
     category : 'Anti Hero Fantasy',
     author : 'Scott Lynch',
     series : 'Gentleman Bastards',
@@ -97,6 +109,7 @@ const antiFantasy = {
   },
   13 : {
     title : 'The Book of the New Sun',
+    link: 'https://www.amazon.com/gp/product/0312890176/ref=as_li_tl?ie=UTF8&tag=90170d-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0312890176&linkId=012b636290ae0b91617acde7f86209fb',
     category : 'Anti Hero Fantasy',
     author : 'Gene Wolfe',
     series : 'The Book Of The New Sun',
@@ -105,6 +118,7 @@ const antiFantasy = {
   },
   14 : {
     title : 'The Grim Company',
+    link: 'https://www.amazon.com/gp/product/0425264858/ref=as_li_tl?ie=UTF8&tag=90170d-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0425264858&linkId=bd7c7928ac9511473a9092a0d8795910t',
     category : 'Anti Hero Fantasy',
     author : 'Luke Scull',
     series : 'The Grim Company',
@@ -113,6 +127,7 @@ const antiFantasy = {
   },
   15 : {
     title : 'Herald Of The Storm',
+    link: 'https://www.amazon.com/gp/product/0755394046/ref=as_li_tl?ie=UTF8&tag=90170d-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0755394046&linkId=77925c14023e8f75fa0e3eecbb8e6b46',
     category : 'Anti Hero Fantasy',
     author : 'Richard FordSteel',
     series : 'Haven',
@@ -121,6 +136,7 @@ const antiFantasy = {
   },
   16 : {
     title : 'The Barrow',
+    link: 'https://www.amazon.com/gp/product/1616148918/ref=as_li_tl?ie=UTF8&tag=90170d-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1616148918&linkId=81155cc96e1a209546633279493e9ac7',
     category : 'Anti Hero Fantasy',
     author : 'Mark Smylie',
     series : 'The Barrow',
@@ -129,6 +145,7 @@ const antiFantasy = {
   },
   17 : {
     title : 'The Witcher',
+    link: 'https://www.amazon.com/gp/product/0316029181/ref=as_li_tl?ie=UTF8&tag=90170d-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0316029181&linkId=8a961ddf5f5024110bc82aa6a8441a0a',
     category : 'Anti Hero Fantasy',
     author : 'Andrzej Sapkowski',
     series : 'The Witcher',
